@@ -3,16 +3,15 @@
     <head>
         <title>JS Function</title>
         <script>
-            function sumRange() {
-                num1 =1;
-                num2 = 100;
-                result = (num2 - num1 + 1) * (num1 + num2) / 2;
-                console.log(result);
+            function getName() {
+                name = document.getElementById('name').value;
+                alert('Hello ' + name);
             }
         </script>
     </head>
     <body>
-        <button type="button" onclick="sumRange()">Click Me!</button>
+        <input type="text" id="name" placeholder="Enter your name">
+        <button type="button" onclick="getName()">Click Me!</button>
     </body>
 </html>
 
