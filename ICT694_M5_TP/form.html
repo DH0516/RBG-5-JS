@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            ICT694 - Module 5 - Task 3
+        </title>
+        <script>
+            function validateInputs(){
+                var x = document.getElementById("number").value;
+                if (x == 0){
+                    alert("Please enter a number");
+                    return false;
+                }
+                else if (x < 0){
+                    alert("Please enter a positive number");
+                    return false;
+                }
+                else if (x > 100){
+                    alert("Please enter a number less than 100");
+                    return false;
+                }
+                else{
+                    return true;
+                }
+            }
+        </script>
+    </head>
+<body>
+	<h1>What is going on</h1>
+	<form>
+        <p>
+            <label>Number</label>
+            <input type="number" id="number" placeholder="Enter your number">            
+        </p>
+    	<button type="submit" onclick="validateInputs()"> Submit </button>
+    </form>
+</body>
+</html>
